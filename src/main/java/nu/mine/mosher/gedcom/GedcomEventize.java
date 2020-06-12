@@ -14,7 +14,6 @@ public class GedcomEventize implements Gedcom.Processor {
     private final GedcomEventizeOptions options;
 
 
-
     public static void main(final String... args) throws InvalidLevel, IOException {
         log();
         final GedcomEventizeOptions options = new ArgParser<>(new GedcomEventizeOptions()).parse(args).verify();
@@ -24,11 +23,9 @@ public class GedcomEventize implements Gedcom.Processor {
     }
 
 
-
     private GedcomEventize(final GedcomEventizeOptions options) {
         this.options = options;
     }
-
 
 
     @Override
